@@ -1,6 +1,7 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:settings_ui/src/abstract_section.dart';
-import 'package:settings_ui/src/colors.dart';
+import 'package:settings_ui_kalimba/src/abstract_section.dart';
+import 'package:settings_ui_kalimba/src/colors.dart';
 
 class SettingsList extends StatelessWidget {
   final bool shrinkWrap;
@@ -26,7 +27,7 @@ class SettingsList extends StatelessWidget {
   Widget build(BuildContext context) {
     return Material(
       child: Ink(
-        color: Theme.of(context).brightness == Brightness.light
+        color: CupertinoTheme.of(context).brightness == Brightness.light
             ? backgroundColor ?? lightBackgroundColor ?? backgroundGray
             : backgroundColor ?? darkBackgroundColor ?? Colors.black,
         child: ListView.builder(

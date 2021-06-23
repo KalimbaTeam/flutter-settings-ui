@@ -1,4 +1,4 @@
-name: settings_ui
+name: settings_ui_kalimba
 description: Create native settings for Flutter app in minutes. Use single interfaces to build
 version: 1.0.0-nullsafety.2
 homepage: https://github.com/yako-dev/flutter-settings-ui

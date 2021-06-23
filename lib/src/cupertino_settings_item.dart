@@ -303,7 +303,7 @@ class CupertinoSettingsItemState extends State<CupertinoSettingsItem> {
   }
 
   Color calculateBackgroundColor(BuildContext context) =>
-      Theme.of(context).brightness == Brightness.light
+      CupertinoTheme.of(context).brightness == Brightness.light
           ? pressed
               ? iosPressedTileColorLight
               : Colors.white
@@ -320,9 +320,11 @@ class CupertinoSettingsItemState extends State<CupertinoSettingsItem> {
       return tileTheme.iconColor;
     }
 
-    switch (theme.brightness) {
+    switch (CupertinoTheme.of(context).brightness) {
       case Brightness.light:
         return Colors.black45;
+      case null:
+        return null;
       case Brightness.dark:
         return null; // null - use current icon theme color
     }

@@ -1,8 +1,8 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:settings_ui/src/abstract_section.dart';
-import 'package:settings_ui/src/cupertino_settings_section.dart';
-import 'package:settings_ui/src/settings_tile.dart';
+import 'package:settings_ui_kalimba/src/abstract_section.dart';
+import 'package:settings_ui_kalimba/src/cupertino_settings_section.dart';
+import 'package:settings_ui_kalimba/src/settings_tile.dart';
 
 import 'defines.dart';
 

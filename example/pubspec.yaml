@@ -10,7 +10,7 @@ dependencies:
     sdk: flutter
   cupertino_icons: ^1.0.2
   device_preview: ^0.6.2-beta
-  settings_ui:
+  settings_ui_kalimba:
     path: ../
 
 dev_dependencies:

@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:settings_ui/settings_ui.dart';
+import 'package:settings_ui_kalimba/settings_ui_kalimba.dart';
 
 import 'colors.dart';
 import 'defines.dart';
@@ -59,7 +59,7 @@ class CupertinoSettingsSection extends StatelessWidget {
         ? Container(
             decoration: BoxDecoration(
               borderRadius: BorderRadius.all(Radius.circular(20)),
-              color: Theme.of(context).brightness == Brightness.light
+              color: CupertinoTheme.of(context).brightness == Brightness.light
                   ? CupertinoColors.white
                   : iosTileDarkColor,
             ),
@@ -70,7 +70,7 @@ class CupertinoSettingsSection extends StatelessWidget {
           )
         : Container(
             decoration: BoxDecoration(
-              color: Theme.of(context).brightness == Brightness.light
+              color: CupertinoTheme.of(context).brightness == Brightness.light
                   ? CupertinoColors.white
                   : iosTileDarkColor,
               border: Border(
